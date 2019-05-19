@@ -41,7 +41,15 @@ public class Main {
         System.out.println(input);
         String[] splitedInputTags = input.split(" ");
 
+        for (int i = 0; i < files.length ; i++){
+            int matches = 0;
+            for (int j = 0; j < splitedInputTags.length ; j++) {
+                if (files[i].tags.contains(splitedInputTags[j])){
+                    matches++;
+                }
+            }
 
+        }
 
 //        ArrayList<String> inputTags = new ArrayList<>();
 //
